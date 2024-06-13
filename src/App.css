@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.wrapper {
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  font-family: 'Rubik';
+}
+
+.header {
+  font-size: 60px;
+}
+
+.grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.row {
+  display: flex;
+}
+
+.item {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  color: #30c5d2;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 55px;
+  background: linear-gradient(135deg, #42047e 0%, #0974f1 100%);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: border-radius 0.25s ease-in-out;
+}
+
+.item:hover {
+  border-radius: 0;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  z-index: 1;
+  font-family: 'Rubik';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.back {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(25px);
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 40px;
+  background-color: #0974f1;
+}
+
+.modal_header {
+  font-weight: 600;
+  font-size: 70px;
+}
